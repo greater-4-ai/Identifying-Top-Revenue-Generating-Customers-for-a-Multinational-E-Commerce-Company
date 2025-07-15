@@ -146,8 +146,8 @@ import matplotlib.pyplot as plt
 total_number_of_missing_values_by_colunms.plot(kind = "bar")
 
 plt.show()
-
 ```
+
 - **2.Handling Missing values**
   
 ```python
