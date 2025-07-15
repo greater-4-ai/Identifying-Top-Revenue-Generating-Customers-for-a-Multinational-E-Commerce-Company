@@ -120,7 +120,7 @@ bikes_df.head()
 
 ```
 ### Data Inspection and Cleaning
--**1.check for Missing values**:
+***1.check for Missing values**:
 
 ```python
 # solution 
@@ -128,10 +128,35 @@ bikes_df.head()
 bikes_df.isna().any()
 
 ```
+
+
+```python
 # counting the nuber of the missing values
 
 total_number_of_missing_values_by_colunms = bikes_df.isna().sum()
 
 total_number_of_missing_values_by_colunms
+```
+
+```python
+import matplotlib.pyplot as plt
+
+# using a bar plot to visualize the missing values
+
+total_number_of_missing_values_by_colunms.plot(kind = "bar")
+
+plt.show()
 
 ```
+- **2.Handling Missing values**
+  
+```python
+# solution 
+
+# bikes_df ["ProductColor"].mode()
+
+bikes_df = bikes_df.fillna("Black")
+
+bikes_df
+```
+  
