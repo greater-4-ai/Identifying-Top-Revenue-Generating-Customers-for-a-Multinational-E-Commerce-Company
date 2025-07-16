@@ -117,7 +117,6 @@ import pandas as pd
 bikes_df = pd.read_csv('C:/Users/HP/Downloads/bikes.csv')
 
 bikes_df.head()
-
 ```
 ### Data Inspection and Cleaning
 * **1.check for Missing values**:
@@ -126,7 +125,6 @@ bikes_df.head()
 # solution 
 
 bikes_df.isna().any()
-
 ```
 
 
@@ -139,11 +137,15 @@ total_number_of_missing_values_by_colunms
 ```
 
 ```python
+# visualizing the total number of missing values
+
 import matplotlib.pyplot as plt
 
 # using a bar plot to visualize the missing values
 
 total_number_of_missing_values_by_colunms.plot(kind = "bar")
+
+# to show the plot
 
 plt.show()
 ```
@@ -158,5 +160,45 @@ plt.show()
 bikes_df = bikes_df.fillna("Black")
 
 bikes_df
+```
+
+
+```python
+# to verify that there are no more missing values on our dataset
+
+bikes_df.isna().any()
+```
+
+- **3. Check for  Duplicates**:
+
+```python
+# solution
+
+# counting the total number of our datapoint
+
+len(bikes_df)
+```
+
+```python
+bikes_cleaned_data_df = bikes_df.drop_duplicates()
+
+bikes_cleaned_data_df
+```
+
+```python
+# dropping any duplicates if any exists
+
+bikes_df.drop_duplicates(inplace = True)
+````
+
+- **4. Handling Duplicates**:
+  
+```python
+# solution
+
+# re-counting  our data point again
+len(bikes_df)
+
+# This shows that there was NO duplicates on our dataset
 ```
   
