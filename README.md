@@ -120,7 +120,7 @@ bikes_df.head()
 
 ```
 ### Data Inspection and Cleaning
-***1.check for Missing values**:
+* **1.check for Missing values**:
 
 ```python
 # solution 
