@@ -118,6 +118,9 @@ bikes_df = pd.read_csv('C:/Users/HP/Downloads/bikes.csv')
 
 bikes_df.head()
 ```
+<img width="739" height="202" alt="Data Pre-processing" src="https://github.com/user-attachments/assets/e492245e-bc32-4b10-b33f-b3008c45aeb3" />
+
+
 ### Data Inspection and Cleaning
 * **1.check for Missing values**:
 
