@@ -129,6 +129,7 @@ bikes_df.head()
 
 bikes_df.isna().any()
 ```
+<img width="156" height="167" alt="Data Inspection and Cleaning 2" src="https://github.com/user-attachments/assets/a33e84af-33b7-478f-9c25-b259b9df9963" />
 
 
 ```python
@@ -138,6 +139,7 @@ total_number_of_missing_values_by_colunms = bikes_df.isna().sum()
 
 total_number_of_missing_values_by_colunms
 ```
+<img width="141" height="160" alt="Number of missing values " src="https://github.com/user-attachments/assets/05c57997-ec52-4cc8-be6f-5527f160299b" />
 
 ```python
 # visualizing the total number of missing values
@@ -152,6 +154,7 @@ total_number_of_missing_values_by_colunms.plot(kind = "bar")
 
 plt.show()
 ```
+<img width="424" height="323" alt="visualizing missing values" src="https://github.com/user-attachments/assets/06cea19e-faca-497c-9554-55d6a2af35f6" />
 
 - **2.Handling Missing values**
   
@@ -165,12 +168,16 @@ bikes_df = bikes_df.fillna("Black")
 bikes_df
 ```
 
+<img width="662" height="355" alt="Handling missing values" src="https://github.com/user-attachments/assets/3e653b98-5edd-4b27-8216-ecf917d81202" />
+
 
 ```python
 # to verify that there are no more missing values on our dataset
 
 bikes_df.isna().any()
 ```
+
+<img width="146" height="73" alt="Total number of data set" src="https://github.com/user-attachments/assets/e19772b5-9a8b-4ea3-aff8-7689c2740854" />
 
 - **3. Check for  Duplicates**:
 
@@ -181,18 +188,24 @@ bikes_df.isna().any()
 
 len(bikes_df)
 ```
+<img width="733" height="25" alt="checking for dupliate" src="https://github.com/user-attachments/assets/a3b19f93-7540-4ac7-b49c-cfa154a7d69e" />
+
 
 ```python
 bikes_cleaned_data_df = bikes_df.drop_duplicates()
 
 bikes_cleaned_data_df
 ```
+<img width="662" height="355" alt="Handling missing values" src="https://github.com/user-attachments/assets/d977538b-233b-4ebd-9348-27f7d59ee912" />
 
 ```python
 # dropping any duplicates if any exists
 
 bikes_df.drop_duplicates(inplace = True)
 ````
+<img width="623" height="74" alt="No duplicates" src="https://github.com/user-attachments/assets/01059179-960a-4888-b603-aa88f34662b8" />
+
+
 
 - **4. Handling Duplicates**:
   
@@ -204,6 +217,9 @@ len(bikes_df)
 
 # This shows that there was NO duplicates on our dataset
 ```
+<img width="851" height="122" alt="Handling duplicate " src="https://github.com/user-attachments/assets/1b0db5ce-8a70-4b50-984b-27549f2b2d78" />
+
+
 ### Data Modification
 
 ```python
