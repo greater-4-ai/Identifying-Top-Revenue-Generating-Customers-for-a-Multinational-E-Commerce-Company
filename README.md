@@ -242,8 +242,7 @@ bikes_df["Profit"] = bikes_df["SalesRevenue"]  - bikes_df["TotalCostPrice"]
 
 bikes_df.head()
 ```
-<img width="754" height="212" alt="Data modification" src="https://github.com/user-attachments/assets/53440d64-3c3b-44a7-b4fe-584b2ec3e914" />
-
+<img width="869" height="233" alt="Data modification" src="https://github.com/user-attachments/assets/d4cc8c3a-4c0a-474d-a9f6-9d4435f79f59" />
 
 ### Data Aggregation
 
@@ -337,7 +336,8 @@ plt.title("The Top 10 Customers by Total Revenue Since the Company Started")
 
 plt.show()
 ```
-<img width="320" height="289" alt="Data vis of the top 10 customers" src="https://github.com/user-attachments/assets/349e1075-130b-4e7f-b97a-9c9c759e294e" />
+<img width="320" height="289" alt="Data viz of the top 10 customers" src="https://github.com/user-attachments/assets/766494bd-0245-48c9-bbc2-2bcfff608967" />
+
 
 
 
